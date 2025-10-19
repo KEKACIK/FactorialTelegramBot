@@ -1,0 +1,5 @@
+services:
+  go_app:
+    build: .
+    restart: unless-stopped
+    command: go run main.go

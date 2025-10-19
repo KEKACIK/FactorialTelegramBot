@@ -30,7 +30,6 @@ func main() {
 }
 
 func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
-	fmt.Println("HI")
 	factorialNumber, err := strconv.Atoi(update.Message.Text)
 	if err != nil {
 		_, _ = b.SendMessage(ctx, &bot.SendMessageParams{
